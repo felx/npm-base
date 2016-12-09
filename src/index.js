@@ -1,3 +1,4 @@
-export const sum = (a, b) => {
-  return new Promise(resolve => resolve(a + b));
-};
+
+const you='World';
+
+console.log(`Hello ${you}!`)
