@@ -1,4 +1,3 @@
-
-const you='World';
-
-console.log(`Hello ${you}!`)
+export const hello = (you) => {  
+  return new Promise(resolve => resolve(`Hello ${you}!`));
+};
