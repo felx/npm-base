@@ -11,7 +11,7 @@
     "mocha": "--require scripts/mocha_runner src/**/__tests__/**/*.js"
   },
   "scripts": {
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
     "build": "babel-cli --plugins transform-runtime src --ignore __tests__ --out-dir ./dist",
     "lint": "eslint ./src",
     "lintfix": "eslint ./src --fix",
