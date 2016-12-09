@@ -12,7 +12,7 @@
   },
   "scripts": {
     "prepublish": "npm run build",
-    "build": "babel-cli --plugins transform-runtime src --ignore __tests__ --out-dir ./dist",
+    "build": "./node_modules/.bin/babel --plugins transform-runtime src --ignore __tests__ --out-dir ./dist",
     "lint": "eslint ./src",
     "lintfix": "eslint ./src --fix",
     "testonly": "mocha $npm_package_options_mocha",
